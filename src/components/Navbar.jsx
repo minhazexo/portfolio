@@ -28,7 +28,7 @@ const Navbar = ({ isTopOfPage, activeSection }) => {
             <li key={item}>
               <a 
                 href={`#${item}`} 
-                className={`${activeSection === item ? 'text-neonBlue' : 'text-secondary'} hover:text-neonBlue transition-colors duration-300 font-medium`}
+                className={`${activeSection === item ? 'text-neonBlue' : 'text-black text-[18px] border-2 border-neonBlue text-lg rounded-lg font-bold'} hover:text-neonBlue transition-colors duration-300 font-medium`}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>

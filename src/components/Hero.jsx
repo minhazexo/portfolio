@@ -35,7 +35,8 @@ const Hero = () => {
             wrapper="div"
             speed={50}
             style={{ fontSize: "2rem", display: "inline-block" }}
-            className="text-secondary font-medium sm:text-3xl text-2xl mt-4"
+            className="text-red-500 font-medium sm:text-3xl text-2xl mt-4"
+
             repeat={Infinity}
           />
 
@@ -43,7 +44,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-secondary text-base sm:text-lg max-w-3xl mt-5"
+            className="text-secondary text-white sm:text-lg max-w-3xl mt-5 drop-shadow-[0_0_2px_black]"
           >
             I build exceptional digital experiences with modern web
             technologies. Currently focused on creating responsive,
@@ -81,7 +82,11 @@ const Hero = () => {
                 <FaGithub className="w-5 h-5 text-white" />
               </motion.div>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/md-mehrab-hossain-minhaz-3071a4370/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <motion.div
                 whileHover={{ y: -5 }}
                 whileTap={{ scale: 0.9 }}
