@@ -29,7 +29,7 @@ const About = () => {
             A passionate Full-Stack Developer based in Dhaka, Bangladesh.
           </h3>
           <p className="text-secondary mb-4">
-            With over X years of experience in web development, I specialize in
+            With over 2 years of experience in web development, I specialize in
             building modern, responsive, and scalable web applications. My
             journey in tech started when...
           </p>
