@@ -39,7 +39,7 @@ const projects = [
     tags: ['React', 'OpenWeather API', 'Geolocation', 'PWA'],
     image: '/src/assets/project4.jpg',
     github: '#',
-    live: '#',
+    live: 'https://minhazexo.github.io/weather-app/',
   },
 ];
 
