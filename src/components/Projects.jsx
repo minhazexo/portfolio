@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { useInView } from 'react-intersection-observer';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-
+import project4 from '../assets/project4.png'
+import seecto from '../assets/seecto.png'
 const projects = [
   {
     id: 1,
@@ -37,11 +38,21 @@ const projects = [
     title: 'Weather Application',
     description: 'Real-time weather forecasting app with location detection and 5-day forecasts.',
     tags: ['React', 'OpenWeather API', 'Geolocation', 'PWA'],
-    image: '/src/assets/project4.jpg',
+    image: project4,
     github: '#',
     live: 'https://minhazexo.github.io/weather-app/',
   },
+  {
+    id: 5,
+    title: 'SEECTO Bangladesh',
+    description: 'A modern, responsive organizational website built for SEECTO Bangladesh with clean UI and smooth animations.',
+    tags: ['React', 'Tailwind CSS', 'Framer Motion'],
+    image: seecto, // change this to your actual image path
+    github: '#',
+    live: 'https://minhazexo.github.io/seecto-bangladesh/',
+  },
 ];
+
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(null);

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeIn } from "../utils/motion";
-import profileImage from '../assets/profile.jpg'; // Ensure this path is correct
+import profileImage from '../assets/profile.jpg';
+import CV from '../assets/CV.pdf'; // ✅ Import the CV file
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -58,9 +59,17 @@ const About = () => {
               </p>
             </div>
           </div>
-          <button className="px-6 py-3 rounded-lg font-bold text-lg bg-gradient-to-r from-neonPurple to-neonBlue text-white shadow-lg shadow-neonBlue/30">
-            Download CV
-          </button>
+
+          {/* ✅ CV download button */}
+          <a
+  href={CV}
+  target="_blank"         // ✅ Opens CV in a new tab
+  rel="noopener noreferrer"
+  className="inline-block px-6 py-3 rounded-lg font-bold text-lg bg-gradient-to-r from-neonPurple to-neonBlue text-white shadow-lg shadow-neonBlue/30 transition-transform duration-300 hover:scale-105"
+>
+  View CV
+</a>
+
         </div>
 
         <div className="flex-1 flex justify-center items-center relative">
@@ -73,7 +82,7 @@ const About = () => {
                 className="w-full h-auto object-cover"
                 onError={(e) => {
                   e.target.onerror = null; 
-                  e.target.src = 'https://via.placeholder.com/400x500'; // Fallback image
+                  e.target.src = 'https://via.placeholder.com/400x500';
                 }}
               />
             </div>
